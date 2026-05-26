@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="icon" type="image/png" href="copa-etec/Imagem do WhatsApp de 2025-10-15 à(s) 22.12.39_ae84bdc0.jpg">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etec de São Sebastião - CD Verdescola</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-fade">
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="copa-etec/Imagem do WhatsApp de 2025-10-15 à(s) 22.12.39_ae84bdc0.jpg" alt="Logo da etec">
+        <h1>Jornal Estudantil - Costa Sul de São Sebastião</h1>
+      </div>
+
+      <nav class="nav">
+        <button class="menu-toggle" id="btn-mobile" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li class="dropdown">
+            <a href="eventos.html">Eventos ▾</a>
+            <ul class="submenu">
+              <li><a href="eventos.html#escolas">Etec</a></li>
+              <li><a href="eventos.html#escolas">Sebastiana</a></li>
+              <li><a href="eventos.html#escolas">Walkir</a></li>
+            </ul>
+          </li>
+          <li><a href="destaque.html">Destaque</a></li>
+          <li><a href="apresentacao.html">TCCs</a></li>
+          <li><a href="professores.html">Professores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="fotos/praia4.jpg" alt="Foto da praia" class="hero-image">
+    <div class="hero-content">
+      <h1>Nosso Time de Educadores</h1>
+      <h2>"Os mestres que fazem a diferença em nossa jornada"</h2>
+    </div>
+  </section>
+
+  <main class="conteudo">
+    <section id="apresentacoes">
+      <h1> Por Trás do Ensino, Grandes Professores</h1>
+      <h2><em>"Professores de diversas escolas reunidos em um só espaço"</em></h2>
+
+      <!-- Nova seção de introdução com imagem e texto -->
+      <div class="professores-intro">
+        <p> Nosso site reúne um time de educadores de diversas instituições da região, incluindo professores da ETEC e
+          de outras
+          escolas parceiras. Cada profissional contribui com seu conhecimento em áreas como Ciências, Matemática,
+          História, Programação,
+          Química, Administração, entre outras. Esses educadores não apenas ensinam conteúdos, mas também inspiram
+          nossos alunos com projetos,
+          eventos e atividades interativas. <br>
+          Ao navegar pelo site, você poderá conhecer melhor quem são esses mestres que atuam em diferentes
+          cursos e modalidades de ensino, sempre comprometidos com uma educação de qualidade. Juntos, constroem uma rede
+          de aprendizado que
+          ultrapassa os muros da sala de aula e transforma a vivência escolar em uma verdadeira jornada de crescimento.
+        </p>
+      </div>
+
+      <!-- Filtro -->
+      <div class="filtro-container">
+        <label for="filtro">Filtrar por Escola:</label>
+        <select id="filtro">
+          <option value="todos">Todos</option>
+          <option value="Etec"> Etec Verdescola</option>
+          <option value="sebastiana">Sebastiana</option>
+          <option value="plinio">Plínio</option>
+          <option value="nair ribeiro">Nair ribeiro</option>
+          <option value="antonio luiz">Antônio luiz</option>
+          <option value="Walkir Vergani">Walkir Vergani</option>
+        </select>
+      </div>
+
+      <!-- Cards -->
+      <section class="container">
+        <div class="card etec">
+          <img src="" alt="Rogério Barroso">
+          <h3>Rogério Barroso</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('rogerio')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Luis Miguel">
+          <h3>Luis Miguel</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('luis')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Gabriel Aquino">
+          <h3>Gabriel Aquino</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('gabriel')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Kátia de Almeida">
+          <h3>Kátia de Almeida</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('katia')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Carlos Eduardo">
+          <h3>Carlos Eduardo</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('carlos')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Mikael Jhonatan">
+          <h3>Mikael Jhonatan</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('mikael')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Graziele de Paula">
+          <h3>Graziele de Paula</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('graziele')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Claudia Nascimento">
+          <h3>Claudia Nascimento</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('claudia')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Altivo Alexandre">
+          <h3>Altivo Alexandre</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('altivo')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Mariano Araujo">
+          <h3>Mariano Araujo</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('mariano')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Paulo">
+          <h3>Paulo</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('paulo')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Guilherme Fernando">
+          <h3>Guilherme Fernando</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('guilherme')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <h3>Tasiana Marques</h3>
+          <img src="" alt="Tasiana Marques">
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('tasiana')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Sonia Valeria">
+          <h3>Sonia Valeria</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('sonia')">Por trás de cada aula, há uma história.</a>
+          </p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Mariana Ferraz">
+          <h3>Mariana Ferraz</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('mariana')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <div class="card etec">
+          <img src="" alt="Instituto Verdescola">
+          <h3>Roberto</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('roberto')">Por trás de cada aula, há uma
+              história.</a></p>
+        </div>
+
+        <!-- Escolas Institucionais -->
+        <div class="card sebastiana">
+          <img src="" alt="Etec de São Sebastião">
+          <h3>Escola Sebastiana</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('sebastiana')">Conheça a história da instituição.</a>
+          </p>
+        </div>
+        <div class="card plinio">
+          <img src="" alt="Plínio">
+          <h3>Escola Plínio</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('plinio')">Conheça a história da instituição.</a></p>
+        </div>
+        <div class="card nair ribeiro">
+          <img src="" alt="Nair Ribeiro">
+          <h3>Escola Nair Ribeiro</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('nair')">Conheça a história da instituição.</a></p>
+        </div>
+        <div class="card antonio luiz">
+          <img src="" alt="Antônio Luiz Barreiros">
+          <h3>Antônio Luiz Barreiros</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('antonio')">Conheça a história da instituição.</a></p>
+        </div>
+        <div class="card Walkir Vergani">
+          <img src="" alt="Walkir Vergani">
+          <h3>Walkir Vergani</h3>
+          <p><a href="javascript:void(0)" onclick="abrirModalProf('walkir')">Conheça a história da instituição.</a></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+  <!-- Modal Dinâmico de Professor/Escola -->
+  <div id="modal-professor" class="modal">
+    <div class="modal-content" style="max-width: 600px; padding: 40px; text-align: center;">
+      <span class="fechar" onclick="fecharModalProf()">&times;</span>
+      <img id="modal-prof-foto" src="" alt="Foto"
+        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px auto; border: 4px solid var(--primary-green); box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h2 id="modal-prof-nome" style="color: var(--dark-green); margin-bottom: 15px;">Nome do Professor</h2>
+      <div id="modal-prof-historia"
+        style="text-align: justify; line-height: 1.8; color: var(--medium-gray); font-size: 16px;">
+        Aqui entra a história.
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    const filtro = document.getElementById('filtro');
+    const cards = document.querySelectorAll('.card');
+    filtro.addEventListener('change', () => {
+      const valor = filtro.value.toLowerCase();
+      cards.forEach(card => {
+        const cardClasses = card.className.toLowerCase();
+        if (valor === 'todos') {
+          card.classList.remove('hidden');
+        } else {
+          if (cardClasses.includes(valor)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        }
+      });
+    });
+
+    const historiasInfo = {
+      'rogerio': { nome: 'Rogério Barroso', foto: '', historia: '' },
+      'luis': { nome: 'Luis Miguel', foto: '', historia: '' },
+      'gabriel': { nome: 'Gabriel Aquino', foto: '', historia: '' },
+      'katia': { nome: 'Kátia de Almeida', foto: '', historia: '' },
+      'carlos': { nome: 'Carlos Eduardo', foto: '', historia: '' },
+      'mikael': { nome: 'Mikael Jhonatan', foto: '', historia: '' },
+      'graziele': { nome: 'Graziele de Paula', foto: '', historia: '' },
+      'claudia': { nome: 'Claudia Nascimento', foto: '', historia: '' },
+      'altivo': { nome: 'Altivo Alexandre', foto: '', historia: '' },
+      'mariano': { nome: 'Mariano Araujo', foto: '', historia: '' },
+      'paulo': { nome: 'Paulo', foto: '', historia: '' },
+      'guilherme': { nome: 'Guilherme Fernando', foto: '', historia: '' },
+      'tasiana': { nome: 'Tasiana Marques', foto: '', historia: '' },
+      'sonia': { nome: 'Sonia Valeria', foto: '', historia: '' },
+      'mariana': { nome: 'Mariana Ferraz', foto: '', historia: '' },
+      'roberto': { nome: 'Roberto', foto: '', historia: '' },
+
+      /* Histórias das Instituições */
+      'sebastiana': { nome: 'Escola Sebastiana', foto: '', historia: '' },
+      'plinio': { nome: 'Escola Plínio', foto: '', historia: '' },
+      'nair': { nome: 'Escola Nair Ribeiro', foto: '', historia: '' },
+      'antonio': { nome: 'Escola Antônio Luiz Barreiros', foto: '', historia: '' },
+      'walkir': { nome: 'Escola Walkir Vergani', foto: '', historia: '' },
+    };
+
+    function abrirModalProf(id) {
+      const prof = historiasInfo[id];
+      if (prof) {
+        document.getElementById('modal-prof-nome').innerText = prof.nome;
+        document.getElementById('modal-prof-foto').src = prof.foto;
+        document.getElementById('modal-prof-historia').innerHTML = `<p>${prof.historia}</p>`;
+
+        const modal = document.getElementById('modal-professor');
+        modal.style.display = "block";
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function fecharModalProf() {
+      document.getElementById('modal-professor').style.display = "none";
+      document.body.style.overflow = 'auto';
+    }
+
+    // Fechar ao clicar fora
+    window.onclick = function (event) {
+      const modal = document.getElementById('modal-professor');
+      if (event.target == modal) {
+        fecharModalProf();
+      }
+    }
+  </script>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="rodape-container">
+      <div class="rodape-coluna">
+
+        <h4> 📞 Contato</h4>
+        <p> email: estudantiljornal993@gmail.com<br></p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>📱 Redes Sociais</h4>
+        <ul>
+          <li><a href="https://instagram.com/Je_Costasul ">Jornal Estudantil Costa Sul </a></li>
+          <li><a href="https://instagram.com/etec.cdverdescola">ETEC - Extensão Verdescola </a></li>
+          <li><a href="https://instagram.com/institutoconservacaocosteira">ICC - Instituto Conservação Costeira</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>🔗 Navegue</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="curiosidades.html">Curiosidade</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="destaque.html">Destaque</a></li>
+          <li><a href="apresentacao.html">TCC</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>🔗 Sites</h4>
+        <ul>
+          <li><a href="https://nsa.cps.sp.gov.br"> NSA </a></li>
+          <li><a href="https://www.canva.com"> Canva</a></li>
+          <li><a href="https://www.microsoft.com"> Microsoft Teams</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape-final">
+      <p>&copy;2026 Jornal Estudantil - Costa Sul de São Sebastião | Desenvolvido por egressos de Agênciamento de
+        Viagens e Administração</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+  <style>
+    /* Estilos customizados da grade de professores */
+
+    /* Estilos do cabeçalho removidos daqui, pois serão carregados do main.css */
+    .filtro-container {
+      max-width: 1000px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #2d7a5e;
+    }
+
+    .card p a {
+      color: #006b3c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .card p a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+
+</html>

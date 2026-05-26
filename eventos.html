@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link rel="icon" type="image/png" href="copa-etec/Imagem do WhatsApp de 2025-10-15 à(s) 22.12.39_ae84bdc0.jpg">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etec de São Sebastião - CD Verdescola</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="page-fade">
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="copa-etec/Imagem do WhatsApp de 2025-10-15 à(s) 22.12.39_ae84bdc0.jpg" alt="Logo da etec">
+        <h1>Jornal Estudantil - Costa Sul de São Sebastião</h1>
+      </div>
+
+      <nav class="nav">
+        <button class="menu-toggle" id="btn-mobile" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li class="dropdown">
+            <a href="eventos.html">Eventos ▾</a>
+            <ul class="submenu">
+              <li><a href="#escolas"
+                  onclick="mostrarEscola('etec', document.querySelector('.escolas-selector .escola-btn:nth-child(1)'));">Etec</a>
+              </li>
+              <li><a href="#escolas"
+                  onclick="mostrarEscola('sebastiana', document.querySelector('.escolas-selector .escola-btn:nth-child(2)'));">Sebastiana</a>
+              </li>
+              <li><a href="#escolas"
+                  onclick="mostrarEscola('walkir', document.querySelector('.escolas-selector .escola-btn:nth-child(3)'));">Walkir</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="destaque.html">Destaque</a></li>
+          <li><a href="apresentacao.html">TCCs</a></li>
+          <li><a href="professores.html">Professores</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="fotos/foto-da-praia.jpg" alt="Foto da praia" class="hero-image">
+    <div class="hero-content">
+      <h1>📅 Categorias de Eventos</h1>
+      <h2>"<em>"Conheça os principais tipos de eventos que realizamos na ETEC!"</em>"</h2>
+      <a href="destaque.html" class="cta-button">Destaques -> </a>
+    </div>
+  </section>
+
+  <main>
+    <section id="eventos">
+      <div id="escolas"></div>
+      <h1>📅 Eventos Escolares</h1>
+      <h2><em>"Conheça os principais eventos que movimentam nossas escolas parceiras!"</em></h2>
+
+      <!-- Seletor de Escolas -->
+      <div class="escolas-selector">
+        <button class="escola-btn active" onclick="mostrarEscola('etec', this)"><i class="fas fa-school"></i> ETEC
+          Verdescola</button>
+        <button class="escola-btn" onclick="mostrarEscola('sebastiana', this)"><i class="fas fa-book"></i>
+          Sebastiana</button>
+        <button class="escola-btn" onclick="mostrarEscola('walkir', this)"><i class="fas fa-pencil-alt"></i> Walkir
+        </button>
+      </div>
+
+      <!-- ESCOLA ETEC -->
+      <div id="escola-etec" class="escola-conteudo active">
+        <div class="abas-eventos">
+          <div class="abas-header">
+            <button class="aba-btn active" onclick="mostrarAba('etec-todos', this, 'etec')">✨ Visão Geral</button>
+            <button class="aba-btn" onclick="mostrarAba('paulo-freire', this, 'etec')">📚 Semana Paulo Freire</button>
+            <button class="aba-btn" onclick="mostrarAba('tecnologica', this, 'etec')">💻 Educ. Midiática</button>
+            <button class="aba-btn" onclick="mostrarAba('visitas-tecnicas', this, 'etec')">🏭 Visitas Técnicas</button>
+            <button class="aba-btn" onclick="mostrarAba('interclasse', this, 'etec')">⚽ Interclasse</button>
+          </div>
+
+          <div id="aba-etec-todos" class="aba-conteudo active">
+            <div class="categoria-header">
+              <img src="fts-eventos/ft-do-castelo.jpg" alt="Visão Geral dos Eventos">
+              <div class="categoria-info">
+                <h3>✨ Visão Geral dos Eventos da ETEC</h3>
+                <p>Nossa escola promove uma variedade de eventos ao longo do ano letivo, buscando enriquecer a
+                  experiência educacional dos alunos e integrar a comunidade. Desde atividades acadêmicas e culturais
+                  até competições esportivas e visitas técnicas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="aba-paulo-freire" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="fts-eventos/ft-do-charle.jpg" alt="Semana Paulo Freire">
+              <div class="categoria-info">
+                <h3>📚 Semana Paulo Freire</h3>
+                <p>A Semana Paulo Freire é um período dedicado à reflexão e ao aprofundamento dos princípios da
+                  pedagogia libertadora. Através de palestras, mesas-redondas, oficinas e atividades culturais, buscamos
+                  promover o pensamento crítico.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="aba-tecnologica" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="Semana Tecnológica">
+              <div class="categoria-info">
+                <h3>💻 Semana da Educação Midiática</h3>
+                <p>O nosso principal evento de inovação, onde apresentamos as últimas tendências em tecnologia e os
+                  projetos mais criativos desenvolvidos pelos alunos com workshops práticos e demonstrações.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="aba-visitas-tecnicas" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="Visitas Técnicas">
+              <div class="categoria-info">
+                <h3>🏭 Visitas Técnicas</h3>
+                <p>As Visitas Técnicas são uma extensão da sala de aula, proporcionando aos alunos a oportunidade de
+                  conhecer de perto o funcionamento de empresas e instituições relevantes para seus cursos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="aba-interclasse" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="fts-eventos/ft-do-inter.jpg" alt="Interclasse">
+              <div class="categoria-info">
+                <h3>⚽ Interclasse</h3>
+                <p>O Interclasse é a nossa tradicional competição esportiva e cultural que promove a integração entre as
+                  turmas e o desenvolvimento do espírito esportivo com diversas modalidades e muita diversão.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESCOLA SEBASTIANA -->
+      <div id="escola-sebastiana" class="escola-conteudo" style="display: none;">
+        <div class="abas-eventos">
+          <div class="abas-header">
+            <button class="aba-btn active" onclick="mostrarAba('sebastiana-todos', this, 'sebastiana')">✨ Visão
+              Geral</button>
+            <button class="aba-btn" onclick="mostrarAba('', this, 'sebastiana')">🔬
+            </button>
+            <button class="aba-btn" onclick="mostrarAba('', this, 'sebastiana')">🌍
+            </button>
+          </div>
+
+          <div id="" class="aba-conteudo active">
+            <div class="categoria-header">
+              <img src="" alt="Visão Geral Sebastiana">
+              <div class="categoria-info">
+                <h3>✨ Eventos da E.E. Sebastiana</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="Feira de Ciências">
+              <div class="categoria-info">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="">
+              <div class="categoria-info">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESCOLA WALKIR -->
+      <div id="escola-walkir" class="escola-conteudo" style="display: none;">
+        <div class="abas-eventos">
+          <div class="abas-header">
+            <button class="aba-btn active" onclick="mostrarAba('walkir-todos', this, 'walkir')">✨ Visão Geral</button>
+            <button class="aba-btn" onclick="mostrarAba('', this, 'walkir')">🎭 </button>
+            <button class="aba-btn" onclick="mostrarAba('', this, 'walkir')">📐</button>
+          </div>
+
+          <div id="" class="aba-conteudo active">
+            <div class="categoria-header">
+              <img src="" alt="Visão Geral Walkir">
+              <div class="categoria-info">
+                <h3>✨ Eventos da E.E. Walkir Vergani</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="">
+              <div class="categoria-info">
+                <h3>🎭</h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="" class="aba-conteudo">
+            <div class="categoria-header">
+              <img src="" alt="">
+              <div class="categoria-info">
+                <h3>📐 </h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Função para trocar de escola
+    function mostrarEscola(escolaId, botao) {
+      document.querySelectorAll('.escola-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.escola-conteudo').forEach(conteudo => {
+        conteudo.style.display = 'none';
+        conteudo.classList.remove('active');
+      });
+
+      botao.classList.add('active');
+      const conteudo = document.getElementById(`escola-${escolaId}`);
+      if (conteudo) {
+        conteudo.style.display = 'block';
+        setTimeout(() => conteudo.classList.add('active'), 10);
+      }
+    }
+
+    // Função para mostrar/ocultar abas de eventos dentro da escola
+    function mostrarAba(abaId, botao, escolaCtx) {
+      const parent = document.getElementById(`escola-${escolaCtx}`);
+      parent.querySelectorAll('.aba-btn').forEach(btn => btn.classList.remove('active'));
+      parent.querySelectorAll('.aba-conteudo').forEach(conteudo => conteudo.classList.remove('active'));
+
+      botao.classList.add('active');
+      const conteudo = document.getElementById(`aba-${abaId}`);
+      if (conteudo) {
+        conteudo.classList.add('active');
+      }
+    }
+  </script>
+
+  <style>
+    /* Dropdown*/
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown:hover .submenu {
+      display: block;
+    }
+
+    .dropdown>a::after {
+      content: " ▾";
+      font-size: 0.8em;
+    }
+
+    /* Estilos para as Escolas Seletor */
+    .escolas-selector {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .escola-btn {
+      background: rgba(255, 255, 255, 0.8);
+      border: 2px solid var(--primary-green);
+      color: var(--primary-green);
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .escola-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(45, 122, 94, 0.2);
+    }
+
+    .escola-btn.active {
+      background: var(--button-gradient);
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+    }
+
+    .escola-conteudo {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .escola-conteudo.active {
+      opacity: 1;
+    }
+
+    /* Estilos para o sistema de abas interno */
+    .abas-eventos {
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+
+    .abas-header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 15px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .aba-btn {
+      background: transparent;
+      border: 2px solid #2d7a5e;
+      color: #2d7a5e;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      /* Evita quebra de linha nos botões */
+    }
+
+    .aba-btn:hover {
+      background: rgba(45, 122, 94, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .aba-btn.active {
+      background: linear-gradient(135deg, #2d7a5e, #1b5e20);
+      color: white;
+      box-shadow: 0 5px 15px rgba(45, 122, 94, 0.4);
+    }
+
+    .aba-conteudo {
+      display: none;
+      animation: fadeIn 0.5s ease;
+      background: rgba(255, 255, 255, 0.98);
+      /* Fundo branco para o conteúdo */
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(10px);
+    }
+
+    .aba-conteudo.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .categoria-header {
+      display: flex;
+      background: white;
+      /* Fundo branco para o header da categoria */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      /* Borda sutil */
+    }
+
+    .categoria-header img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      flex-shrink: 0;
+      /* Impede que a imagem encolha */
+    }
+
+    .categoria-info {
+      padding: 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .categoria-info h3 {
+      color: #1b5e20;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .categoria-info p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Removendo estilos de elementos que não existem mais */
+    .calendario-container,
+    .eventos-proximos,
+    .evento-card,
+    .evento-data,
+    .evento-info,
+    .btn-inscricao,
+    .eventos-passados,
+    .evento-passado,
+    .evento-passado-info,
+    .modal-inscricao,
+    .form-group,
+    .btn-enviar {
+      display: none !important;
+      /* Garante que sejam removidos */
+    }
+
+    /* Responsividade para as abas */
+    @media (max-width: 768px) {
+      .abas-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+      }
+
+      .aba-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      .categoria-header {
+        flex-direction: column;
+      }
+
+      .categoria-header img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .categoria-info {
+        padding: 20px;
+      }
+
+      .aba-conteudo {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .aba-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+      }
+
+      .categoria-info h3 {
+        font-size: 20px;
+      }
+
+      .categoria-info p {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="rodape-container">
+      <div class="rodape-coluna">
+        <h4> 📞 Contato</h4>
+        <p> email: estudantiljornal993@gmail.com<br></p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>📱 Redes Sociais</h4>
+        <ul>
+          <li><a href="https://instagram.com/Je_Costasul ">Jornal Estudantil Costa Sul </a></li>
+          <li><a href="https://instagram.com/etec.cdverdescola">ETEC - Extensão Verdescola </a></li>
+          <li><a href="https://instagram.com/institutoconservacaocosteira">ICC - Instituto Conservação Costeira</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>🔗 Navegue</h4>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="curiosidades.html">Curiosidade</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="destaque.html">Destaque</a></li>
+          <li><a href="apresentacao.html">TCC</a></li>
+        </ul>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>🔗 Sites</h4>
+        <ul>
+          <li><a href="https://nsa.cps.sp.gov.br"> NSA </a></li>
+          <li><a href="https://www.canva.com"> Canva</a></li>
+          <li><a href="https://www.microsoft.com"> Microsoft Teams</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rodape-final">
+      <p>&copy; 2026 Jornal Estudantil - Costa Sul de São Sebastião | Desenvolvido por egressos de Agênciamento de
+        Viagens e Administração</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
